@@ -1,6 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
 /*@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');*/
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+@import url('https://use.fontawesome.com/releases/v5.7.2/css/all.css');
+
 
 *{
     font-family: 'Open Sans','Montserrat', 'Arial', sans-serif;
@@ -9,4 +11,47 @@ body{
     margin: 0;
     font-size: 14px;
    
+}
+.row{
+    width:100%;
+    padding: 15px;
+}
+.col-12{
+    width:100%;
+}
+.col-11{
+    width:91.6%;
+}
+.col-10{
+    width:83.3%;
+}
+.col-9{
+    width:75%;
+}
+.col-8{
+    width:66.6%;
+}
+.col-7{
+    width:58.3%;
+}
+.col-6{
+    width:50%;
+}
+.col-5{
+    width:41.6%;
+}
+.col-4{
+    width:33.3%;
+}
+.col-3{
+    width:25%;
+}
+.col-2{
+    width:16.6%;
+}
+.col-1{
+    width:8.3%;
+}
+[class^='col']{
+display: inline-block;
 }

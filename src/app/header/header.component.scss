@@ -1,7 +1,8 @@
 nav{
-    //position: absolute;
+    position: fixed;
     width: 100%;
     background-color: #000000;
+    opacity: 0.8;
     min-height: 3.5rem;
    
     ul{
@@ -32,9 +33,17 @@ nav{
             padding: 24px 0px;
             margin: 0 15px;
         }
+        li:hover{
+            a{
+                color:orange;
+            }
+        }
     }
     .nav-active{
         border-bottom: 2px solid orangered;
+        a{
+            color:orange;
+        }
     }
 }
     
