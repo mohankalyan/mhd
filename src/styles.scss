@@ -3,13 +3,16 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
 @import url('https://use.fontawesome.com/releases/v5.7.2/css/all.css');
 
-
+html{
+    scroll-behavior: smooth;
+}
 *{
     font-family: 'Open Sans','Montserrat', 'Arial', sans-serif;
     box-sizing: border-box;
 }
 body{
     margin: 0;
+    margin-top: 4.5rem;
     font-size: 14px;
     color: #444;
     background-color: #fff;
@@ -118,6 +121,9 @@ a{
     padding: 10px 0 10px 20px;
     margin: auto;
     margin-bottom: 1rem;
+}
+.form-control:focus{
+    outline: #ff863f auto 5px;
 }
 .form-control-lg{
     width: 95%;
