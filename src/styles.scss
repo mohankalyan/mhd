@@ -12,6 +12,10 @@ body{
     font-size: 14px;
     color: #444;
 }
+.container{
+    padding: 0 7.5%;
+}
+
 .row{
     width:100%;
    // padding: 15px;
@@ -54,13 +58,43 @@ body{
 }
 [class^='col']{
     display: inline-block;
+    vertical-align:top;
+   // float: left;
 }
 h1,h2,h3,h4,h5,h6{
     font-family: 'Raleway', sans-serif;
     margin: 0 0 15px;
     color: #444;
-    font-weight: 500;
+   // font-weight: 500;
 }
 h4{
     font-size: 1.5rem;
+}
+.badge{
+    display: inline-block;
+    padding: 8px 15px;
+    border: 1px solid black;
+    border-radius: 20px;
+    margin: 5px;
+}
+.badge-active{
+    color:white;
+    border:none;
+    background-color: rgb(252, 77, 14);
+}
+.back-to-top {
+    position: fixed;
+    display: none;
+    //background: #ff863f;
+    color: #fff;
+    padding: 6px 12px 9px 12px;
+    font-size: 16px;
+    right: 15px;
+    bottom: 15px;
+    transition: background 0.5s;
+    i{
+        color:white;
+        background-color: #fc4d0e;
+        border: none !important;
+    }
 }
