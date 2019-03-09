@@ -1,0 +1,27 @@
+<section id="portfolio">
+  <div class="section-head">
+    <h1>Our Portfolio</h1>
+  </div>
+  <div class="section-body">
+    <div class="row">
+      <div class="img-container" *ngFor="let portfolio of portfolioList" (click)="openSlideShow();">
+        <div class="img-body">
+          <img src="{{portfolio.imageUrl}}" alt="portfolio">
+          <div class="img-details">
+            <div class="overlay"></div>
+            <div class="img-desc">
+              <h4>{{portfolio.serviceType}}</h4>
+              <div>{{portfolio.constructionType}}</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+</section>
+<div class="slide-show" *ngIf="openImage">
+<app-slide-show (closeSlide)="closeSlideShow($event)"></app-slide-show>
+
+</div>

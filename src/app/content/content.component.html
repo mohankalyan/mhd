@@ -1,256 +1,226 @@
-<app-carousel></app-carousel>
-<div class="content">
-  <!-- About Section-->
-  <section id="about">
-    <div class="section-head">
-      <h1>About Us</h1>
-    </div>
-    <div class="section-body">
-      <div class="image-container">
-        <img src="../assets/images/about/1.jpg" alt="about image">
-      </div>
-      <div id="about-content">
-        <div id="about-content-head">
-          <h3>THE FIRM</h3>
-        </div>
-        <div id="about-content-body">
-          <p>My Home Design Consultants , an Architecture and Interior Design firm based in
-            Visakhapatnam, India, was established by Harish Arnepalli.</p>
-          <p>The firm headed by Ar. Harish create a versatile body of work ranging from Architecture , Interiors
-            of residences and commercial buildings, Industrial, Landscape and Urban Planning projects.</p>
-          <p>My Home Design Consultant’s distinct style of tropical residential architecture uses
-            local materials and concepts, but reinterprets them with a unique and contemporary design sensibility.</p>
-        </div>
-      </div>
-    </div>
-  </section>
+<div (scroll)="changeMenu($event)">
+  <div id="home">
+    <app-carousel></app-carousel>
+  </div>
 
-  <!--Our Services Section-->
-  <section id="services">
-    <div class="section-head">
-      <h1>Our Services</h1>
-    </div>
-    <div class="section-body">
-      <div class="row">
-        <div class="col-4">
-          <div class="icon">
-            <i class="fa fa-home"></i>
-          </div>
-          <div class="services_head">
-            <h3>Architecture</h3>
-            <p>Planning and Development | Civil and Structural Engineering Consultancy | MEP Consultancy</p>
-          </div>
-
-        </div>
-        <div class="col-4">
-          <div class="icon">
-            <i class="fa fa-paint-brush"></i>
-          </div>
-          <div class="services_head">
-            <h3>Interiors</h3>
-            <p>Residential | Retail and Commercial | |Furniture and Product Design| Office</p>
-          </div>
-        </div>
-        <div class="col-4">
-          <div class="icon">
-            <i class="fa fa-map"></i>
-          </div>
-          <div class="services_head">
-            <h3>Urban Planning</h3>
-            <p>Town and Regional planning | Infrastructure Development | Development Plans</p>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-4">
-          <div class="icon">
-            <i class="fa fa-leaf"></i>
-          </div>
-          <div class="services_head">
-            <h3>Landscape Architecture</h3>
-            <p>Site Planning and Development | Landscape Planning</p>
-          </div>
-        </div>
-        <div class="col-4">
-          <div class="icon">
-            <i class="fa fa-industry"></i>
-          </div>
-          <div class="services_head">
-            <h3>Industrial</h3>
-            <p>Pharma Industries</p>
-          </div>
-        </div>
-        <div class="col-4">
-          <div class="icon">
-            <i class="fa fa-ticket-alt"></i>
-          </div>
-          <div class="services_head">
-            <h3>Branding</h3>
-            <p>Logo Design | Brochure and Poster Design</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Design Philosophy Section-->
-  <section id="design-philosophy">
-
-    <div class="container">
-      <div class="overlay"></div>
+  <div class="content">
+    <!-- About Section-->
+    <section id="about">
       <div class="section-head">
-        <h1>Design Philosophy</h1>
-        <p>At My Home Design Consultants, we are contextualists who believe that architecture should
-          be rooted in one’s environment and to a particular site. After walking through a particular
-          site we always like to ask ourselves – What building does this site really want to see?
-          While we work with an international style, we draw inspiration from traditional concepts,
-          craft as well as local material.</p>
-        <p>We interpret the same with a contemporary design approach.</p>
-        <p>Our design is experiential and attempts to modulate space to create beautiful,
-          peaceful or dramatic spaces.</p>
-        <p>Living in a tropical environment, our architecture is climate sensitive and the relationship
-          between built form and the external environment constant. We work in a hands-on way working closely
-          to customize solutions with our collaborators.</p>
-        <p>We look at design holistically often blurring the boundaries between the disciplines of
-          architecture, interior design, landscape, furniture and lighting.</p>
+        <h1>About Us</h1>
       </div>
-    </div>
-  </section>
-
-  <section id="team">
-    <div class="section-head">
-      <h1>Our Special Team</h1>
-    </div>
-    <div class="row">
-      <div class="profile-container">
-        <div class="profile-img-container">
-          <img src="../../assets/images/team/3.jpg" alt="image">
+      <div class="section-body">
+        <div class="image-container">
+          <img src="../assets/images/about/1.jpg" alt="about image">
         </div>
-        <div class="profile-body">
-          <h4>A Harish</h4>
-          <p>Architect and City Planner</p>
-        </div>
-      </div>
-      <div class="profile-container">
-        <div class="profile-img-container">
-          <img src="../../assets/images/team/4.jpg" alt="image">
-        </div>
-        <div class="profile-body">
-          <h4>T Harish</h4>
-          <p>Architect, Urban and Rural Planner</p>
-        </div>
-      </div>
-      <div class="profile-container">
-        <div class="profile-img-container">
-          <img src="../../assets/images/team/3.jpg" alt="image">
-        </div>
-        <div class="profile-body">
-          <h4>A Harish</h4>
-          <p>Architect, City Planner</p>
-        </div>
-      </div>
-      <div class="profile-container">
-        <div class="profile-img-container">
-          <img src="../../assets/images/team/4.jpg" alt="image">
-        </div>
-        <div class="profile-body">
-          <h4>A Harish</h4>
-          <p>Architect, City Planner</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- portfolio -->
-  <section id="portfolio">
-    <div class="section-head">
-      <h1>Our Portfolio</h1>
-    </div>
-    <div class="section-body">
-      <div class="row">
-        <a href="">
-          <div class="badge badge-active">All</div>
-        </a>
-        <a href="">
-          <div class="badge">Development</div>
-        </a>
-        <a href="">
-          <div class="badge">Design</div>
-        </a>
-        <a href="">
-          <div class="badge">Photoshop</div>
-        </a>
-      </div>
-      <div class="row">
-        <div class=" img-container">
-          <img src="../../assets/images/portfolio/1.jpg" alt="">
-        </div>
-        <div class=" img-container">
-          <img src="../../assets/images/portfolio/2.jpg" alt="">
-        </div>
-        <div class=" img-container">
-          <img src="../../assets/images/portfolio/3.jpg" alt="">
-        </div>
-        <div class=" img-container">
-          <img src="../../assets/images/portfolio/6.jpg" alt="">
-        </div>
-        <div class=" img-container">
-          <img src="../../assets/images/portfolio/4.jpg" alt="">
-        </div>
-        <div class=" img-container">
-          <img src="../../assets/images/portfolio/5.jpg" alt="">
-        </div>
-        <div class="col-3 img-container">
-          <img src="../../assets/images/portfolio/7.jpg" alt="">
-        </div>
-        <div class="col-3 img-container">
-          <img src="../../assets/images/portfolio/8.jpg" alt="">
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <section id="contact">
-    <div class="section-head">
-      <h1>Contact Us</h1>
-    </div>
-    <div class="section-body">
-      <div class="row">
-        <div class="col-4">
-          <a><i class="fas fa-phone"></i></a>
-          <p>Call: 09494526944 or 08919488692 </p>
-          <p>Monday-Saturday (9am-6pm)</p>
-        </div>
-        <div class="col-4">
-          <a><i class="far fa-envelope"></i></a>
-          <p>Email: harish.nit2244@gmail.com</p>
-          <p>Web: www.example.com</p>
-        </div>
-        <div class="col-4">
-          <a> <i class="fas fa-map-marker-alt"></i></a>
-          <p>Location: Vijayaratna Towers, Flat 102</p>
-          <p>Chandrampalem, Madhurawada</p>
-          <p>Visakhapatnam, Andhra Pradesh 530048</p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-6">
-          <div class="map-location">
-              <iframe src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;q=%20Vijayaratna%20Towers%2C%20Flat%20102%2C%20Chandrampalem%2C%20Madhurawada%2C%20Visakhapatnam%2C%20Andhra%20Pradesh%20530048+(My%20Home%20Design%20Consultants)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed"
-               width="100%" height="380" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <div id="about-content">
+          <div id="about-content-head">
+            <h3>THE FIRM</h3>
           </div>
-        </div>
-        <div class="col-6">
-          <div class="contact-form">
-            <input class="form-control form-control-lg" type="text" placeholder="Your Name">
-            <input class="form-control form-control-lg" type="text" placeholder="Your Email">
-            <input class="form-control form-control-lg" type="text" placeholder="Subject">
-            <textarea class="form-control form-control-lg" name="message" rows="5" placeholder="Message"></textarea>        
-            <button class="send-message">SEND MESSAGE</button>
+          <div id="about-content-body">
+            <p>My Home Design Consultants , an Architecture and Interior Design firm based in
+              Visakhapatnam, India, was established by Harish Arnepalli.</p>
+            <p>The firm headed by Ar. Harish create a versatile body of work ranging from Architecture , Interiors
+              of residences and commercial buildings, Industrial, Landscape and Urban Planning projects.</p>
+            <p>My Home Design Consultant’s distinct style of tropical residential architecture uses
+              local materials and concepts, but reinterprets them with a unique and contemporary design sensibility.</p>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+
+    <!--Our Services Section-->
+    <section id="services">
+      <div class="section-head">
+        <h1>Our Services</h1>
+      </div>
+      <div class="section-body">
+        <div class="row">
+          <div class="col-4">
+            <a>
+              <div class="icon">
+                <i class="fa fa-home"></i>
+              </div>
+              <div class="services_head">
+                <h3>Architecture</h3>
+                <p>Planning and Development | Civil and Structural Engineering Consultancy | MEP Consultancy</p>
+              </div>
+            </a>
+          </div>
+          <div class="col-4">
+            <a>
+              <div class="icon">
+                <i class="fa fa-paint-brush"></i>
+              </div>
+              <div class="services_head">
+                <h3>Interiors</h3>
+                <p>Residential | Retail and Commercial | |Furniture and Product Design| Office</p>
+              </div>
+            </a>
+          </div>
+          <div class="col-4">
+            <a>
+              <div class="icon">
+                <i class="fa fa-map"></i>
+              </div>
+              <div class="services_head">
+                <h3>Urban Planning</h3>
+                <p>Town and Regional planning | Infrastructure Development | Development Plans</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-4">
+            <a>
+              <div class="icon">
+                <i class="fa fa-leaf"></i>
+              </div>
+              <div class="services_head">
+                <h3>Landscape Architecture</h3>
+                <p>Site Planning and Development | Landscape Planning</p>
+              </div>
+            </a>
+          </div>
+          <div class="col-4">
+            <a>
+              <div class="icon">
+                <i class="fa fa-industry"></i>
+              </div>
+              <div class="services_head">
+                <h3>Industrial</h3>
+                <p>Pharma Industries</p>
+              </div>
+            </a>
+          </div>
+          <div class="col-4">
+            <a>
+              <div class="icon">
+                <i class="fa fa-ticket-alt"></i>
+              </div>
+              <div class="services_head">
+                <h3>Branding</h3>
+                <p>Logo Design | Brochure and Poster Design</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Design Philosophy Section-->
+    <section id="design-philosophy">
+
+      <div class="container">
+        <div class="overlay"></div>
+        <div class="section-head">
+          <h1>Design Philosophy</h1>
+          <p>At My Home Design Consultants, we are contextualists who believe that architecture should
+            be rooted in one’s environment and to a particular site. After walking through a particular
+            site we always like to ask ourselves – What building does this site really want to see?
+            While we work with an international style, we draw inspiration from traditional concepts,
+            craft as well as local material.</p>
+          <p>We interpret the same with a contemporary design approach.</p>
+          <p>Our design is experiential and attempts to modulate space to create beautiful,
+            peaceful or dramatic spaces.</p>
+          <p>Living in a tropical environment, our architecture is climate sensitive and the relationship
+            between built form and the external environment constant. We work in a hands-on way working closely
+            to customize solutions with our collaborators.</p>
+          <p>We look at design holistically often blurring the boundaries between the disciplines of
+            architecture, interior design, landscape, furniture and lighting.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="team">
+      <div class="section-head">
+        <h1>Our Special Team</h1>
+      </div>
+      <div class="row">
+        <div class="profile-container">
+          <div class="profile-img-container">
+            <img src="../../assets/images/team/3.jpg" alt="image">
+          </div>
+          <div class="profile-body">
+            <h4>A Harish</h4>
+            <p>Architect and City Planner</p>
+          </div>
+        </div>
+        <div class="profile-container">
+          <div class="profile-img-container">
+            <img src="../../assets/images/team/4.jpg" alt="image">
+          </div>
+          <div class="profile-body">
+            <h4>T Harish</h4>
+            <p>Architect, Urban and Rural Planner</p>
+          </div>
+        </div>
+        <div class="profile-container">
+          <div class="profile-img-container">
+            <img src="../../assets/images/team/3.jpg" alt="image">
+          </div>
+          <div class="profile-body">
+            <h4>A Harish</h4>
+            <p>Architect, City Planner</p>
+          </div>
+        </div>
+        <div class="profile-container">
+          <div class="profile-img-container">
+            <img src="../../assets/images/team/4.jpg" alt="image">
+          </div>
+          <div class="profile-body">
+            <h4>A Harish</h4>
+            <p>Architect, City Planner</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- portfolio -->
+    <app-portfolio></app-portfolio>
+
+    <section id="contact">
+      <div class="section-head">
+        <h1>Contact Us</h1>
+      </div>
+      <div class="section-body">
+        <div class="row">
+          <div class="col-4">
+            <a><i class="fas fa-phone"></i></a>
+            <p>Call: 09494526944 or 08919488692 </p>
+            <p>Monday-Saturday (9am-6pm)</p>
+          </div>
+          <div class="col-4">
+            <a><i class="far fa-envelope"></i></a>
+            <p>Email: harish.nit2244@gmail.com</p>
+            <p>Web: www.example.com</p>
+          </div>
+          <div class="col-4">
+            <a> <i class="fas fa-map-marker-alt"></i></a>
+            <p>Location: Vijayaratna Towers, Flat 102</p>
+            <p>Chandrampalem, Madhurawada</p>
+            <p>Visakhapatnam, Andhra Pradesh 530048</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6">
+            <div class="map-location">
+              <iframe
+                src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;q=%20Vijayaratna%20Towers%2C%20Flat%20102%2C%20Chandrampalem%2C%20Madhurawada%2C%20Visakhapatnam%2C%20Andhra%20Pradesh%20530048+(My%20Home%20Design%20Consultants)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed"
+                width="100%" height="380" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="contact-form">
+              <input class="form-control form-control-lg" type="text" placeholder="Your Name">
+              <input class="form-control form-control-lg" type="text" placeholder="Your Email">
+              <input class="form-control form-control-lg" type="text" placeholder="Subject">
+              <textarea class="form-control form-control-lg" name="message" rows="5" placeholder="Message"></textarea>
+              <button class="send-message">SEND MESSAGE</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
 </div>

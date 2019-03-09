@@ -1,29 +1,30 @@
 <div class="carousel-container" *ngIf="slideIndex">
     <div class="overlay level-1"></div>
   <div class="carousel-body">
-    <div class="carousel-item slide" *ngIf="slideIndex==1">
+    <div class="carousel-item " *ngIf="slideIndex==1">
       <img src="../../assets/images/about/4.jpg" alt="">
       <div class="carousel-item-head level-2">
         <h2>Welocme to</h2>
         <h1>My Home Design Consultants</h1>
-        <div class="row">
-            <a href="#services" class="badge badge-active">
-              <div >See Services</div>
-            </a>
-            <a href="#about" class="badge">
-              <div>Learn More</div>
-            </a>
-           
-          </div>
+        
     </div>
     </div>
-    <div class="carousel-item slide" *ngIf="slideIndex==2">
+    <div class="carousel-item " *ngIf="slideIndex==2">
         <img src="../../assets/images/about/2.jpg" alt="">
       </div>
-    <div class="carousel-item slide" *ngIf="slideIndex==3">
+    <div class="carousel-item " *ngIf="slideIndex==3">
           <img src="../../assets/images/about/3.jpg" alt="">
       </div>
   </div>
+  <div class="navigate">
+      <a href="#services" class="badge badge-active">
+        <div >See Services</div>
+      </a>
+      <a href="#about" class="badge">
+        <div>Learn More</div>
+      </a>
+     
+    </div>
   <div class="carousel-nav ">
     <a class="prev level-2" (click)="nextSlide(-1)">&#10094;</a> 
     <a class="next level-2" (click)="nextSlide(1)">&#10095;</a> 

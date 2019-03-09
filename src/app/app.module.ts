@@ -6,6 +6,8 @@ import { HeaderComponent } from './header/header.component';
 import { ContentComponent } from './content/content.component';
 import { CarouselComponent } from './common/carousel/carousel.component';
 import { FooterComponent } from './footer/footer.component';
+import { PortfolioComponent } from './content/portfolio/portfolio.component';
+import { SlideShowComponent } from './common/slide-show/slide-show.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +15,9 @@ import { FooterComponent } from './footer/footer.component';
     HeaderComponent,
     ContentComponent,
     CarouselComponent,
-    FooterComponent
+    FooterComponent,
+    PortfolioComponent,
+    SlideShowComponent
   ],
   imports: [
     BrowserModule

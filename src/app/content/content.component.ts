@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter, HostListener, Directive } from '@angular/core';
 
 @Component({
   selector: 'app-content',
@@ -11,5 +11,19 @@ export class ContentComponent implements OnInit {
 
   ngOnInit() {
   }
+  @Output()
+  scrollSelection = new EventEmitter<string>();
+
+
+  onSectionChange(sectionId: string) {
+    console.log('selection change='+sectionId);
+    this.scrollSelection.emit(sectionId);
+    
+  }
+
+  changeMenu(event){
+    console.log('*'+event);
+  }
 
 }
+
