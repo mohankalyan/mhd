@@ -1,22 +1,53 @@
 <div class="carousel-container" *ngIf="slideIndex">
-    <div class="overlay level-1"></div>
+  <div class="overlay level-1"></div>
   <div class="carousel-body">
-    <div class="carousel-item " *ngIf="slideIndex==1">
-      <img src="../../assets/images/about/4.jpg" alt="">
+    <div class="carousel-item fade" *ngIf="slideIndex==1">
+      <img src="../../assets/images/slider/slider1.jpg" alt="">
       <div class="carousel-item-head level-2">
-        <h2>Welocme to</h2>
+        <h2>Welcome to</h2>
         <h1>My Home Design Consultants</h1>
-        
-    </div>
-    </div>
-    <div class="carousel-item " *ngIf="slideIndex==2">
-        <img src="../../assets/images/about/2.jpg" alt="">
+        <div class="navigate1">
+            <a href="#services" class="badge badge-active">
+              <div>See Services</div>
+            </a>
+            <a href="#about" class="badge">
+              <div>Learn More</div>
+            </a>    
+          </div>
       </div>
-    <div class="carousel-item " *ngIf="slideIndex==3">
-          <img src="../../assets/images/about/3.jpg" alt="">
+      
+    </div>
+    <div class="carousel-item fade" *ngIf="slideIndex==2">
+      <img src="../../assets/images/slider/slider2.jpg" alt="">
+      <div class="carousel-item-head level-2">
+        <h1>you Dream we BUILD</h1>
+        <div class="navigate1">
+            <a href="#services" class="badge badge-active">
+              <div>See Services</div>
+            </a>
+            <a href="#about" class="badge">
+              <div>Learn More</div>
+            </a>    
+          </div>
       </div>
+    </div>
+    <div class="carousel-item fade" *ngIf="slideIndex==3">
+      <img src="../../assets/images/slider/slider3.jpg" alt="">
+      <div class="carousel-item-head level-2">
+        <h2>We're in the Business</h2>
+        <h1>To give best Design Solutions in the field of Architecture and Urban Planning</h1>
+        <div class="navigate1">
+            <a href="#services" class="badge badge-active">
+              <div>See Services</div>
+            </a>
+            <a href="#about" class="badge">
+              <div>Learn More</div>
+            </a>    
+          </div>
+      </div>  
+    </div>
   </div>
-  <div class="navigate">
+  <!-- <div class="navigate">
       <a href="#services" class="badge badge-active">
         <div >See Services</div>
       </a>
@@ -24,9 +55,9 @@
         <div>Learn More</div>
       </a>
      
-    </div>
+    </div> -->
   <div class="carousel-nav ">
-    <a class="prev level-2" (click)="nextSlide(-1)">&#10094;</a> 
-    <a class="next level-2" (click)="nextSlide(1)">&#10095;</a> 
+    <a class="prev level-2" (click)="nextSlide(-1)">&#10094;</a>
+    <a class="next level-2" (click)="nextSlide(1)">&#10095;</a>
   </div>
 </div>

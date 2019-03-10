@@ -143,7 +143,6 @@ section{
     padding: 5% 7.5%;
     h1{
         font-size: 40px;
-        text-align: center;
         color: #4e4b4be1;
         margin: 0;
         margin-bottom: 5%;
@@ -161,4 +160,21 @@ section{
 }
 .level--1{
 z-index: -1;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .6} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .6} 
 }
