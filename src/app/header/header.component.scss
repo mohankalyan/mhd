@@ -22,6 +22,9 @@ nav{
     #left-menu{
         
         float: left;
+        .menu{
+            display: none;
+        }
     }
      .nav-logo img{
         height: 3.5rem;
@@ -29,7 +32,7 @@ nav{
     
     #right-menu{
         text-align: right;
-       
+        display: block;
         li{
             display: inline-block;
             padding: 24px 0px;
@@ -50,3 +53,23 @@ nav{
 }
     
 
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    #right-menu{
+        display: none;
+        li{
+            display: block!important;
+            text-align: center;
+        }
+    } 
+    nav #left-menu {
+        float: none;
+        .menu{
+            display: inline;
+            font-size: 2rem;          
+            position: absolute;
+            right: 1rem;
+            top: 0.5rem;
+        }
+    }       
+  }
