@@ -9,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PortfolioComponent implements OnInit {
 
-  constructor(private portfolioService:PortfolioService) { }
+  constructor(public portfolioService:PortfolioService) { }
   private portfolioList:Portfolio[]= this.portfolioService.portfolioList;
   openImage:boolean;
   ngOnInit() {
