@@ -2,10 +2,17 @@
 .mySlides {
   display: none;
   text-align: center;
+  width: 100%;
+  padding: 1rem 0.8rem;
+  position: absolute;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%,-50%);
 }
 img {
-  vertical-align: middle;
-  max-width:80%;
+ // vertical-align: middle;
+ // max-width:80%;
+ max-width: 100%;
   height: auto;
 
 }
@@ -16,6 +23,7 @@ img {
   position: relative;
   margin: auto;
   padding: 3rem 0;
+  height: 100%;
 }
 
 /* Caption text */
@@ -33,7 +41,7 @@ img {
 .numbertext {
   color: #f2f2f2;
   font-size: 12px;
-  padding: 8px 12px;
+  //padding: 8px 12px;
   position: absolute;
   top: 0;
 }
@@ -41,11 +49,13 @@ img {
 /* Slide show Navigation */
 .slide-show-nav{
   position: absolute;
-  top:35%;
+  top:50%;
+ // transform: translateY(-50%);
   font-size: 3rem;
   width: 100%;
  a{
    color: rgb(182, 182, 182);
+   transform: translateY(-50%);
  }
 }
 /* The dots/bullets/indicators */

@@ -32,5 +32,11 @@ export class HeaderComponent implements OnInit {
     return this.currentSection === id;
   }
   
+  @HostListener('window:click', ['$event'])
+  onClick(event) {
+    if(event.target.tagName.toLowerCase()==="a"){
+      this.expandMenu=false;
+    }
+  }
 
 }
