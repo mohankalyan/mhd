@@ -200,13 +200,21 @@
             </div>
           </div>
           <div class="col-6">
-            <div class="contact-form">
-              <input class="form-control form-control-lg" type="text" placeholder="Your Name">
-              <input class="form-control form-control-lg" type="text" placeholder="Your Email">
-              <input class="form-control form-control-lg" type="text" placeholder="Subject">
-              <textarea class="form-control form-control-lg" name="message" rows="5" placeholder="Message"></textarea>
-              <button class="send-message">SEND MESSAGE</button>
-            </div>
+              <!-- <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdE5B2wxfWO6cBDOUutf1euh73r8aC1n8Zi-2diPxPkvHFGAg/viewform?embedded=true" width="100%" height="930" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe> -->
+             <div class="contact-form">
+                <script type="text/javascript">var submitted=false;</script>
+                <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted)  {window.location='https://mohankalyan.github.io/mhd/';}"></iframe>
+                <form 
+                action="https://docs.google.com/forms/d/e/1FAIpQLSdE5B2wxfWO6cBDOUutf1euh73r8aC1n8Zi-2diPxPkvHFGAg/formResponse"
+                 method="post" target="'https://mohankalyan.github.io/mhd/'" 
+                onsubmit="submitted=true;">
+              <input class="form-control form-control-lg" type="email" placeholder="Your Email" name="emailAddress" >
+              <input class="form-control form-control-lg" type="text" placeholder="Your Name" name="entry.1774626817">
+              <input class="form-control form-control-lg" type="text" placeholder="phone" name="entry.511273828">
+              <textarea class="form-control form-control-lg" name="message" rows="5" placeholder="Message" name="entry.361478008"></textarea>
+              <input type="submit" class="send-message"  value="SEND MESSAGE">
+            </form>
+            </div> 
           </div>
         </div>
       </div>
