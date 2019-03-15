@@ -1,6 +1,5 @@
 .carousel-container{
     position: relative;
-   
     width: 100%;
 }
 div{
@@ -9,7 +8,7 @@ div{
 }
 img{
     width: 100%;
-    min-height: 600px;
+    //min-height: 600px;
 }
 .overlay{
     position: absolute;
@@ -32,7 +31,7 @@ img{
             font-weight: 700;
         }
         .badge-active,.badge:hover{
-            border:none;  
+            border:1px solid #ff863f;
         }
         
     } 
@@ -41,13 +40,14 @@ img{
     }
     .carousel-item-head{
         position: absolute;
-        top:20%;
+        
         width: 100%;
         padding: 0 5rem;
         text-align: center;
-        margin: 0;
-      
+        margin: 0;  
         font-size: 1.4rem;
+        top:40%;
+        transform: translatey(-40%);
     }
 }
 // .active{
@@ -97,14 +97,14 @@ img{
 @keyframes slide {
     100% { right: 0; }
 }
-.badge{
-    color: #ffffff;
-    border: 1px solid #ffffff;
-    font-weight: 700;
-}
-.badge-active,.badge:hover{
-    border:none;  
-}
+// .badge{
+//     color: #ffffff;
+//     border: 1px solid #ffffff;
+//     font-weight: 700;
+// }
+// .badge-active,.badge:hover{
+//     border:1px solid #ff863f;  
+// }
 .navigate{
     position: absolute;
     top: 40%;
@@ -139,4 +139,8 @@ h2,h1{
     img{
         min-height:180px;
     }
+  }
+  .navigate1{
+      font-size: 1rem;
+      padding-top: 1rem;
   }

@@ -1,6 +1,5 @@
 .footer-container{
     background: #f9f9f9;
-  //  height: 500px;
     padding-top: 5%;
     padding-bottom: 0;
 }
@@ -13,14 +12,14 @@ span{
 a{
     color:#000000;
 }
-i{
-    margin: 5px;
-    padding: 0.7rem;
-    text-align: center;
-    border: 1px solid black;
-    border-radius: 50%;
-}
-i:hover{
+// i{
+//     margin: 5px;
+//     padding: 0.7rem;
+//     text-align: center;
+//     border: 1px solid black;
+//     border-radius: 50%;
+// }
+.circle:hover{
     color: #ffffff;
     border: none;
     background-color: #ff863f;
@@ -38,5 +37,35 @@ footer{
     padding: 1%;
     text-align: center;
     line-height: 1.5rem;
-    
+    a{
+        color: #ff863f;
+    }
+    div{
+        margin: 0.5rem;
+    }
+}
+.circle{
+    color: #000000;
+    margin: 5px;
+    width: 2.5rem;
+    height: 2.5rem;
+    padding: 0.6rem;
+    display: inline-block;
+    text-align: center;
+    border: 1px solid #444;
+    border-radius: 50%;
+}
+.back-to-top {
+    position: fixed;
+    background: #ff863f;
+    color: #fff;
+    padding: 6px 12px;
+    font-size: 16px;
+    right: 15px;
+    bottom: 15px;
+    transition: background 0.5s;
+    border: none ;
+    i{
+        vertical-align: middle;
+    }
 }

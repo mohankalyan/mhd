@@ -8,8 +8,8 @@ import { Component, OnInit, Input, HostListener } from '@angular/core';
 export class HeaderComponent implements OnInit {
 
   expandMenu:boolean=true;
-  currentSection='home';
-
+  currentSection:string='home';
+  isMobile:boolean=false;
   constructor() { }
 
   public innerWidth: any;
@@ -22,10 +22,15 @@ export class HeaderComponent implements OnInit {
   }
 
   setExpandMenu(width){
-    if(width<768)
+    if(width<768){
+
       this.expandMenu=false;
-    else
+      this.isMobile=true;
+    }
+    else{
       this.expandMenu=true;
+      this.isMobile=false;
+    }
   }
 
   isActive(id){
@@ -34,7 +39,7 @@ export class HeaderComponent implements OnInit {
   
   @HostListener('window:click', ['$event'])
   onClick(event) {
-    if(event.target.tagName.toLowerCase()==="a"){
+    if(event.target.tagName.toLowerCase()==="a" && this.isMobile){
       this.expandMenu=false;
     }
   }

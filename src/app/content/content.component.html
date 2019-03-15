@@ -144,9 +144,9 @@
           <div class="profile-body">
             <h4>A Harish</h4>
             <p>Architect and City Planner</p>
-                <a><i class="fab fa-facebook-f"></i></a>               
-                <a><i class="fab fa-twitter"></i></a>               
-                <a><i class="fab fa-linkedin-in"></i></a>               
+                <a href="https://www.facebook.com/harish.arnepalli" target="_blank"><i class="fab fa-facebook-f"></i></a>               
+                <a href="https://twitter.com/harish2244" target="_blank"><i class="fab fa-twitter"></i></a>               
+                <a href="https://www.linkedin.com/in/harish-arnepalli-843b4947/" target="_blank"><i class="fab fa-linkedin-in"></i></a>               
           </div>
         </div>
         <div class="profile-container">
@@ -156,8 +156,8 @@
           <div class="profile-body">
             <h4>T Harish</h4>
             <p>Architect, Urban Planner</p>
-            <a><i class="fab fa-facebook-f"></i></a>               
-                <a><i class="fab fa-twitter"></i></a>               
+            <a href="https://www.facebook.com/harish.thangula" target="_blank"><i class="fab fa-facebook-f"></i></a>               
+                <a href=""><i class="fab fa-twitter"></i></a>               
                 <a><i class="fab fa-linkedin-in"></i></a>     
           </div>
         </div>
@@ -202,17 +202,37 @@
           <div class="col-6">
               <!-- <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdE5B2wxfWO6cBDOUutf1euh73r8aC1n8Zi-2diPxPkvHFGAg/viewform?embedded=true" width="100%" height="930" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe> -->
              <div class="contact-form">
-                <script type="text/javascript">var submitted=false;</script>
-                <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted)  {window.location='https://mohankalyan.github.io/mhd/';}"></iframe>
-                <form 
+                <script type="text/javascript">
+                var submitted=false;
+                </script>
+               
+                <form ngNoForm 
                 action="https://docs.google.com/forms/d/e/1FAIpQLSfIIcsphuOx2hqWIC_K8id7R27z4QVIpDjb9YEe7yhVU94ZoA/formResponse" 
-                 method="post" target="'https://mohankalyan.github.io/mhd/'" 
-                onsubmit="submitted=true;">
-              <input class="form-control form-control-lg" type="email" placeholder="Your Email" name="emailAddress" >
-              <input class="form-control form-control-lg" type="text" placeholder="Your Name" name="entry.121378455">
-              <input class="form-control form-control-lg" type="text" placeholder="Your phone" name="entry.108847832">
-              <textarea class="form-control form-control-lg" name="message" rows="5" placeholder="Message" name="entry.1039121929"></textarea>
-              <input type="submit" class="send-message"  value="SEND MESSAGE">
+                 method="post" target="_blank" id="contactusForm" #contactusForm
+                onsubmit="submitted=true;setTimeout(()=> document.getElementById('contactusForm').reset(),2000) ">
+                <div class="form-control form-control-lg">
+                    <input required class="form-control-input" type="email" placeholder="Your Email (required)"
+                    name="emailAddress" id="emailAddress" [pattern]="'^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$'" [(ngModel)]="contact.emailAddress" #emailAddress="ngModel">              
+                     <p *ngIf="emailAddress.invalid && (emailAddress.dirty || emailAddress.touched)">Enter a valid email address</p>
+     
+                </div>
+                <div class="form-control form-control-lg">
+              <input class="form-control-input" type="text" placeholder="Your Name (required)" 
+              required name="entry.121378455" [(ngModel)]="contact.name" #name="ngModel">
+              <p *ngIf="name.invalid && (name.dirty || name.touched)">Name field is required</p>
+                  </div>
+
+                  <div class="form-control form-control-lg">
+              <input class="form-control-input" type="text" placeholder="Your phone"
+               name="entry.108847832" [(ngModel)]="contact.phone" #phone="ngModel">
+              <!-- <span *ngIf="phone.invalid && (phone.dirty || phone.touched)">Enter a valid Phone number</span> -->
+              </div>
+              <div class="form-control form-control-lg">
+              <textarea class="form-control-input" name="message" rows="5"
+               required placeholder="Message (required)" name="entry.1039121929" [(ngModel)]="contact.message" #message="ngModel"></textarea>
+              <p *ngIf="message.invalid && (message.dirty || message.touched)">Message is required</p>
+                </div>
+              <input type="submit" class="send-message" value="SEND MESSAGE" >
             </form>
             </div> 
           </div>
@@ -221,3 +241,4 @@
     </section>
   </div>
 </div>
+

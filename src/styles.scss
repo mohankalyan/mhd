@@ -1,6 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 /*@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');*/
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700|Raleway:400,700');
 @import url('https://use.fontawesome.com/releases/v5.7.2/css/all.css');
 
 html{
@@ -102,32 +102,37 @@ a{
     border:none;
     background-color: #ff863f;
 }
-.back-to-top {
-    position: fixed;
-    display: none;
-    //background: #ff863f;
-    color: #fff;
-    padding: 6px 12px 9px 12px;
-    font-size: 16px;
-    right: 15px;
-    bottom: 15px;
-    transition: background 0.5s;
-    i{
-        color:white;
-        background-color: #ff863f;
-        border: none !important;
-    }
-}
+// .back-to-top {
+//     position: fixed;
+//     display: none;
+//     //background: #ff863f;
+//     color: #fff;
+//     padding: 6px 12px 9px 12px;
+//     font-size: 16px;
+//     right: 15px;
+//     bottom: 15px;
+//     transition: background 0.5s;
+//     i{
+//         color:white;
+//         background-color: #ff863f;
+//         border: none !important;
+//     }
+// }
 .form-control{
-    padding: 10px 0 10px 20px;
+    padding: 10px 0 0px 0px;
     margin: auto;
     margin-bottom: 1rem;
 }
-.form-control:focus{
+.form-control-input:focus{
     outline: #ff863f auto 5px;
 }
 .form-control-lg{
-    width: 95%;
+    width: 100%;
+   // border: 1px solid #6b6b6b;
+}
+.form-control-input{
+    padding: 10px 0 10px 20px;
+    width: 100%;
     border: 1px solid #6b6b6b;
 }
 textarea{

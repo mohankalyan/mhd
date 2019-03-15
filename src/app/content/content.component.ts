@@ -7,6 +7,12 @@ import { Component, OnInit, Output, EventEmitter, HostListener, Directive } from
 })
 export class ContentComponent implements OnInit {
 
+  contact:any={
+    emailAddress:"",
+    name:"",
+    phone:"",
+    message:""
+  };
   constructor() { }
 
   ngOnInit() {
@@ -24,6 +30,7 @@ export class ContentComponent implements OnInit {
   changeMenu(event){
     console.log('*'+event);
   }
+
 
 }
 
