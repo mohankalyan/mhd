@@ -31,22 +31,24 @@ nav{
     #right-menu{
         text-align: right;
         display: block;
-        li{
+        a{
             display: inline-block;
             padding: 24px 0px;
             margin: 0 15px;
         }
-        li:hover{
-            a{
-                color:orange;
-            }
-        }
-    }
-    .nav-active{
-        border-bottom: 2px solid #ff863f;
-        a{
+        a:hover{
             color:#ff863f;
         }
+    }
+
+    .nav-active{
+        border-bottom: 2px solid #ff863f;
+        // display: inline-block;
+        //     padding: 24px 0px;
+        //     margin: 0 15px;
+            color:#ff863f;
+
+       
     }
 }
     

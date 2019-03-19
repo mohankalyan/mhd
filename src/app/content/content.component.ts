@@ -1,4 +1,4 @@
-import { Component, OnInit, Output, EventEmitter, HostListener, Directive } from '@angular/core';
+import { Component, OnInit, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-content',
@@ -13,23 +13,50 @@ export class ContentComponent implements OnInit {
     phone:"",
     message:""
   };
+ // section;
+  sections = {};
+  
   constructor() { }
 
   ngOnInit() {
+    var section = document.querySelectorAll(".section");
+    setTimeout(()=>{
+      section.forEach((e)=>{
+        console.log(e);
+        this.sections[e.id] = (<HTMLInputElement>e).offsetTop;
+      },this);
+  
+    },0);
   }
-  @Output()
-  scrollSelection = new EventEmitter<string>();
 
 
-  onSectionChange(sectionId: string) {
-    console.log('selection change='+sectionId);
-    this.scrollSelection.emit(sectionId);
+
+
+  @HostListener('window:scroll', ['$event'])
+  onScroll(event) {
+    var scrollPosition = document.documentElement.scrollTop || document.body.scrollTop;
+
+    for (let i in this.sections) {
+      if (this.sections[i] < scrollPosition) {
+        document.querySelector('.nav-active').setAttribute('class', ' ');
+        document.querySelector('a[href*=' + i + ']').setAttribute('class', 'nav-active');
+      }
+    }
+  }
+
+  // @Output()
+  // scrollSelection = new EventEmitter<string>();
+
+
+  // onSectionChange(sectionId: string) {
+  //   console.log('selection change='+sectionId);
+  //   this.scrollSelection.emit(sectionId);
     
-  }
+  // }
 
-  changeMenu(event){
-    console.log('*'+event);
-  }
+  // changeMenu(event){
+  //   console.log('*'+event);
+  // }
 
 
 }

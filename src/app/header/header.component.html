@@ -11,12 +11,18 @@
     <div id="right-menu" [style.display]="expandMenu ? 'block' : 'none'" >
      
       <ul>
-        <li [ngClass]="{'nav-active': isActive('home')}"><a href="#home" (click)="currentSection='home'">Home</a></li>
+        <a [ngClass]="{'nav-active': isActive('home')}" href="#home" (click)="currentSection='home'">Home</a>       
+        <a [ngClass]="{'nav-active': isActive('about')}" href="#about" (click)="currentSection='about'">About</a>
+        <a [ngClass]="{'nav-active': isActive('services')}" href="#services" (click)="currentSection='services'">Services</a>
+        <a [ngClass]="{'nav-active': isActive('team')}" href="#team" (click)="currentSection='team'">Team</a>
+        <a [ngClass]="{'nav-active': isActive('portfolio')}" href="#portfolio" (click)="currentSection='portfolio'">Portfolio</a>
+        <a [ngClass]="{'nav-active': isActive('contact')}" href="#contact" (click)="currentSection='contact'">Contact</a>
+        <!-- <li [ngClass]="{'nav-active': isActive('home')}"><a href="#home" (click)="currentSection='home'">Home</a></li>
         <li [ngClass]="{'nav-active': isActive('about')}"><a href="#about" (click)="currentSection='about'">About</a></li>
         <li [ngClass]="{'nav-active': isActive('services')}"><a href="#services" (click)="currentSection='services'">Services</a></li>
         <li [ngClass]="{'nav-active': isActive('team')}"><a href="#team" (click)="currentSection='team'">Team</a></li>
         <li [ngClass]="{'nav-active': isActive('portfolio')}"><a href="#portfolio" (click)="currentSection='portfolio'">Portfolio</a></li>
-        <li [ngClass]="{'nav-active': isActive('contact')}"><a href="#contact" (click)="currentSection='contact'">Contact</a></li>
+        <li [ngClass]="{'nav-active': isActive('contact')}"><a href="#contact" (click)="currentSection='contact'">Contact</a></li> -->
       </ul>
     </div>
   </div>
