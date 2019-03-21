@@ -4,7 +4,7 @@
   </div>
   <div class="section-body">
     <div class="row">
-      <div class="img-container col-4" *ngFor="let portfolio of portfolioList" (click)="openSlideShow();">
+      <div class="img-container col-4" *ngFor="let portfolio of portfolioList" (click)="openSlideShow(portfolio);">
         <div class="img-body">
           <img src="{{portfolio.imageUrl}}" alt="portfolio">
           <div class="img-details">
@@ -22,6 +22,6 @@
   </div>
 </section>
 <div class="slide-show" *ngIf="openImage">
-<app-slide-show (closeSlide)="closeSlideShow($event)"></app-slide-show>
+<app-slide-show [selected]="selectedImg" (closeSlide)="closeSlideShow($event)"></app-slide-show>
 
 </div>

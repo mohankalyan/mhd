@@ -11,12 +11,14 @@ export class PortfolioComponent implements OnInit {
 
   constructor(public portfolioService:PortfolioService) { }
   public portfolioList:Portfolio[]= this.portfolioService.portfolioList;
+  selectedImg:Portfolio;
   openImage:boolean;
   ngOnInit() {
   }
 
-  openSlideShow(){
+  openSlideShow(portfolio:Portfolio){
   this.openImage= true;
+  this.selectedImg=portfolio;
   }
   closeSlideShow(isClosed:boolean){
     this.openImage =!isClosed;

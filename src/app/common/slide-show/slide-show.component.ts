@@ -1,5 +1,6 @@
 import { PortfolioService } from './../../services/content/portfolio.service';
-import { Component, OnInit, AfterViewInit, EventEmitter, Output } from '@angular/core';
+import { Component, OnInit, AfterViewInit, EventEmitter, Output, Input } from '@angular/core';
+import { Portfolio } from 'src/app/content/portfolio/portfolio.model';
 
 @Component({
   selector: 'app-slide-show',
@@ -10,6 +11,8 @@ export class SlideShowComponent implements OnInit,AfterViewInit {
 
   slideIndex=0;
   portfolioList=this.portfolioService.portfolioList;
+@Input() selected:Portfolio;
+
   @Output()
   closeSlide = new EventEmitter<boolean>();
   constructor(private portfolioService:PortfolioService) { }
@@ -19,6 +22,7 @@ export class SlideShowComponent implements OnInit,AfterViewInit {
   }
 
   ngAfterViewInit(){
+    this.slideIndex=this.portfolioList.indexOf(this.selected);
     this.nextSlide(1);
   }
   

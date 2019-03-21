@@ -22,7 +22,7 @@ export class ContentComponent implements OnInit {
     var section = document.querySelectorAll(".section");
     setTimeout(()=>{
       section.forEach((e)=>{
-        console.log(e);
+       // console.log(e);
         this.sections[e.id] = (<HTMLInputElement>e).offsetTop;
       },this);
   
