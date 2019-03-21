@@ -28,7 +28,6 @@
             ],
             "styles": [
               "node_modules/aos/dist/aos.css",
-              "https://use.fontawesome.com/releases/v5.7.2/css/all.css",
               "src/styles.scss"
             ],
             "scripts": [
@@ -89,7 +88,6 @@
             "karmaConfig": "src/karma.conf.js",
             "styles": [
               "node_modules/aos/dist/aos.css",
-              "https://use.fontawesome.com/releases/v5.7.2/css/all.css",
               "src/styles.scss"
             ],
             "scripts": [
