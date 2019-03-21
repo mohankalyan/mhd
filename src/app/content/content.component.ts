@@ -1,4 +1,5 @@
 import { Component, OnInit, HostListener } from '@angular/core';
+import * as AOS from 'aos';
 
 @Component({
   selector: 'app-content',
@@ -19,6 +20,8 @@ export class ContentComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    AOS.init();
+
     var section = document.querySelectorAll(".section");
     setTimeout(()=>{
       section.forEach((e)=>{

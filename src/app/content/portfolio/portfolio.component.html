@@ -1,9 +1,9 @@
 <section class="portfolio" >
-  <div class="section-head">
+  <div class="section-head"  data-aos="fade-down" data-aos-duration="2000">
     <h1>Our Portfolio</h1>
   </div>
   <div class="section-body">
-    <div class="row">
+    <div class="row"  data-aos="fade-up" data-aos-duration="2000">
       <div class="img-container col-4" *ngFor="let portfolio of portfolioList" (click)="openSlideShow(portfolio);">
         <div class="img-body">
           <img src="{{portfolio.imageUrl}}" alt="portfolio">
