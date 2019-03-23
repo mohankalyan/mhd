@@ -1,7 +1,7 @@
 <div class="carousel-container" *ngIf="slideIndex">
   <div class="overlay level-1"></div>
   <div class="carousel-body">
-    <div class="carousel-item fade" *ngIf="slideIndex==1" data-aos-duration="2000">
+    <div class="carousel-item fade"  [style.display]="slideIndex==1? 'block':'none'">
       <img src="./assets/images/slider/slider1.jpg" alt="">
       <div class="carousel-item-head level-2" data-aos="fade-down">
         <h2 data-aos="fade-up" data-aos-duration="2000">Welcome to</h2>
@@ -17,7 +17,7 @@
       </div>
       
     </div>
-    <div class="carousel-item fade" *ngIf="slideIndex==2">
+    <div class="carousel-item fade"  [style.display]="slideIndex==2? 'block':'none'">
       <img src="./assets/images/slider/slider2.jpg" alt="">
       <div class="carousel-item-head level-2" data-aos="fade-up">
         <h1 data-aos="fade-down" data-aos-duration="2000">you Dream we BUILD</h1>
@@ -31,7 +31,7 @@
           </div>
       </div>
     </div>
-    <div class="carousel-item fade" *ngIf="slideIndex==3">
+    <div class="carousel-item fade"  [style.display]="slideIndex==3? 'block':'none'">
       <img src="./assets/images/slider/slider3.jpg" alt="">
       <div class="carousel-item-head level-2" >
         <h2 data-aos="fade-up" data-aos-duration="2000">We're in the Business</h2>
