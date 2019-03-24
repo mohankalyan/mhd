@@ -43,6 +43,9 @@ img{
     } 
     .carousel-item-head h2,h1{
         color: #ffffff;
+        i{
+            color: #ff863f;
+        }
     }
     .carousel-item-head{
         position: absolute;
@@ -142,8 +145,12 @@ h2,h1{
       
         font-size: 0.75rem!important;
     }
-    h2{
+    .desktop-visible{
         display: none;
+    }
+    h2{
+        padding-bottom: 0;
+        margin-bottom: 0;
     }
     .carousel-nav {
         display: none;
@@ -154,7 +161,7 @@ h2,h1{
     .navigate1{
         font-size: 0.65rem;
         font-family: 'Raleway', sans-serif;
-       // padding-top: 1rem;
+        padding-top: 0.5rem;
     }
   }
  

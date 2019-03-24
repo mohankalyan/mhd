@@ -14,7 +14,7 @@ export class CarouselComponent implements OnInit,OnDestroy {
     this.timer=setInterval(()=>{
       //console.log("timer called");
       this.nextSlide(1);
-    },10000);
+    },8000);
   }
   ngOnDestroy(){
     clearInterval(this.timer);
