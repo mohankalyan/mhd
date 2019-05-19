@@ -5,6 +5,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "jenkins_build" : "ng build --prod --output-path jenkinsBuild --base-href ./",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
